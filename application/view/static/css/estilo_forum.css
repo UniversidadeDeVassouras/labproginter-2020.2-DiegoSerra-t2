@@ -1,0 +1,190 @@
+html{
+    font-size: 100%;
+ 
+}
+/* ------------------------------------------- Inicio body ------------------------------------------- */
+body  {
+    margin: 0;
+    padding:0;
+    display: grid;
+    grid-template-areas: 
+    "cabecalho"
+    "conteudo"
+    "rodape"; 
+    grid-template-rows:  12vh 78vh 10vh;   
+}
+/* ------------------------------------------- Fim body  -------------------------------------------------- */
+/* ------------------------------------------- Inicio Cabecalho ------------------------------------------- */
+
+body header{
+    background-color: #ebeaea;
+    grid-area: cabecalho;
+    display: grid;
+    grid-template-areas: 
+    "logo menu dados"
+    "busca busca busca";
+    grid-template-columns: 20vw 60vw 20vw;
+    grid-template-rows: 8vh 4vh;
+    place-items: center;
+    
+}
+
+ a{
+    color: black;
+}
+
+#dados{
+    grid-area:dados;
+    background-color:#ebeaea;
+}
+
+#dados i{
+    margin:0;
+    padding:0;
+    font-size: 40px;
+    position:relative;
+    left: 100px;   
+     
+    
+}
+#busca{
+    margin:0;
+    grid-area:busca;
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+  
+ 
+
+}
+ #busca input{
+    border: 3px solid rgb(61, 57, 57);
+    height: 30px;
+    width: 700px;
+    border-radius: 50px;
+    padding: 0px 20px;
+    position: relative; 
+    margin-top: -15px;
+}
+
+
+
+body header nav ul{
+    grid-area: menu;
+    list-style-type: none;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 7vh;
+    
+    
+}
+
+ #menuimagem i{
+     margin:0;
+     padding: 0;
+     font-size: 40px;
+    
+   
+}
+#logo{
+    grid-area: logo;
+    width: 65%;
+    height: 60%;
+
+}
+/* ------------------------------------------- Fim Cabecalho ------------------------------------------- */
+/* ------------------------------------------- Inicio Section ------------------------------------------- */
+
+body section{
+    background-color:rgb(250, 245, 245);
+    grid-area: conteudo;
+    
+       
+}
+h1{
+    text-align: center;
+    font-size: clamp(3rem, 2vw, 1.5rem);
+    
+}
+
+h3{
+    text-align: center;
+    font-size: clamp(3rem, 2vw, 1.5rem);
+    color:red
+
+}
+body section{
+    background-color:white;
+}
+#pequena{
+    position: relative;
+    margin-left: 600px;
+    margin-top: 80px;
+}
+#forum #pergunta{
+    width: 30vw;
+    height: 15vh;
+    border: 3px solid rgb(61, 57, 57);
+    background-color: #ebeaea;
+    border-radius: 50px;
+    position: relative;
+    margin-left: 700px;
+    margin-top: -90px;
+}
+#forum #pergunta p{
+    text-align: center;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+#forum button{
+    position: relative;
+    margin-left: 400px;
+    margin-top: 40px;
+    border: 3px solid rgb(61, 57, 57);
+    border-radius: 50px;
+    width:150px;
+    height: 25px;
+    background-color: #b71c1c;
+
+}
+
+#forum #reposta input{
+    width: 30vw;
+    height: 15vh;
+    border: 3px solid rgb(61, 57, 57);
+    background-color: white;
+    border-radius: 50px;
+    position: relative;
+    margin-left: 700px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+#forum #enviar{
+    position: relative;
+    margin-left: 1100px;
+    margin-top: 10px;
+    border: 3px solid rgb(61, 57, 57);
+    border-radius: 50px;
+
+}
+    
+
+
+
+
+
+/* ------------------------------------------- Fim Section ------------------------------------------- */
+/* ------------------------------------------- Inicio Footer ------------------------------------------- */
+
+body footer{
+    background-color: #ebeaea;
+    grid-area: rodape;
+
+}
+
+/* ------------------------------------------- Fim Footer ------------------------------------------- */
+
+
+

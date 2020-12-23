@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ambiente Virtual</title>
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="{{url_for('static', filename='css/estilo_disciplina.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <header>
+            
+        <nav>
+            <ul>
+                <li id="menuimagem"><i class="fas fa-home fa-border"></i></li>
+                <a href="{{url_for('disciplina')}}"><li id="menuimagem"><i class="fas fa-th-large  fa-border"></i></li></a>
+                <a href="{{url_for('forum')}}"><li id="menuimagem"><i class="far fa-comments fa-border"></i></li></a>
+                <li id="menuimagem"><i class="far fa-calendar-alt fa-border"></i></li>
+                <li id="menuimagem"><i class="fas fa-cog  fa-border"></i></li>
+                <li id="menuimagem"><i class="fas fa-sign-out-alt fa-border"></i></li>
+            </ul>
+        </nav>
+        <section id="dados">
+            <i class="far fa-user"></i>
+        </section>
+        <section id="busca">
+            <input type="text" placeholder="pesquise aqui o que desejar"> </input>
+        </section>
+    </header>   
+
+  
+    <section id="graddisc">
+        <h1>Seja bem vindo ao Ambiente Virtual de Aprendizagem</h1> 
+        <article id="disc">
+            <section>
+                <i class="far fa-file-pdf"></i>
+                <h2><b>Disciplina: Sistema Operacionais</b></h2>
+                <h4>Professor: Felipe</h4>
+                <h3>Periodo: 4º</h3>
+            </section>
+            <section>
+                <i class="far fa-file-pdf"></i>
+                <h2>Disciplina: Modelagem de Banco de Bados</h2>
+                <h4>Professor: Anrafel</h4>
+                <h3>Periodo: 4º</h3>
+            </section>
+            <section>
+                <i class="far fa-file-pdf"></i>
+                <h2>Disciplina: Empreendorismo</h2>
+                <h4>Professor: Marco Antonio</h4>
+                <h3>Periodo: 4º</h3>
+            </section>
+            <section>
+                <i class="far fa-file-pdf"></i>
+                <h2>Disciplina: Interfaces com usuario</h2>
+                <h4>Professor: Tassio</h4>
+                <h3>Periodo: 4º</h3>
+            </section>
+        </article>
+    </section>
+
+
+
+
+
+
+
+
+    <footer>
+    
+    </footer>
+
+
+</body>
+
+</html>

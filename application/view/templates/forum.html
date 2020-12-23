@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ambiente Virtual</title>
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="{{url_for('static', filename='css/estilo_forum.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="{{url_for('static', filename = 'imagens/logo.png')}}">
+        <nav>
+            <ul>
+                <li id="menuimagem"><i class="fas fa-home fa-border"></i></li>
+                <a href="{{url_for('disciplina')}}"><li id="menuimagem"><i class="fas fa-th-large  fa-border"></i></li>
+                <a href="{{url_for('forum')}}"><li id="menuimagem"><i class="far fa-comments fa-border"></i></li></a>
+                <li id="menuimagem"><i class="far fa-calendar-alt fa-border"></i></li>
+                <li id="menuimagem"><i class="fas fa-cog  fa-border"></i></li>
+                <li id="menuimagem"><i class="fas fa-sign-out-alt fa-border"></i></li>
+            </ul>
+        </nav>
+        <section id="dados">
+            <i class="far fa-user"></i>
+        </section>
+        <section id="busca">
+            <input type="text" placeholder="pesquise aqui o que desejar"> </input>
+        </section>
+    </header>   
+
+  
+    <section id="forum">
+        <h1>Fórum da disciplina Interface com Usuário</h1> 
+        <h3>Framework</h3>
+        
+
+            <img id="pequena" src="{{url_for('static', filename = 'imagens/carinha.png')}}">
+            <section id="pergunta">
+                <p>Indique um framework e aponte os pontos fortes dele
+                </p>
+                <button type="submit" id="responder">Responder</button>
+                
+            </section>
+            <section id="reposta">
+                <input type=text-area id="resposta" placeholder="Digite aqui a sua resposta...">
+            </section>
+            <button type="submit" id="enviar">Enviar</button>
+            
+           
+        </article>
+    </section>
+
+
+
+
+
+
+
+
+    <footer>
+    
+    </footer>
+
+
+</body>
+
+</html>

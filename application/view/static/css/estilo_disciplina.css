@@ -1,0 +1,225 @@
+html{
+    font-size: 100%;
+ 
+}
+/* ------------------------------------------- Inicio body ------------------------------------------- */
+body  {
+    margin: 0;
+    padding:0;
+    display: grid;
+    grid-template-areas: 
+    "cabecalho"
+    "conteudo"
+    "rodape"; 
+    grid-template-rows:  12vh 78vh 10vh;   
+}
+/* ------------------------------------------- Fim body  -------------------------------------------------- */
+/* ------------------------------------------- Inicio Cabecalho ------------------------------------------- */
+
+body header{
+    background-color: #ebeaea;
+    grid-area: cabecalho;
+    display: grid;
+    grid-template-areas: 
+    "logo menu dados"
+    "busca busca busca";
+    grid-template-columns: 20vw 60vw 20vw;
+    grid-template-rows: 8vh 4vh;
+    place-items: center;
+    
+}
+a{
+    color: black;
+}
+
+#dados{
+    grid-area:dados;
+    background-color:#ebeaea;
+}
+
+#dados i{
+    margin:0;
+    padding:0;
+    font-size: 40px;
+    position:relative;
+    left: 100px;   
+     
+    
+}
+#busca{
+    margin:0;
+    grid-area:busca;
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+  
+ 
+
+}
+ #busca input{
+    border: 3px solid rgb(61, 57, 57);
+    height: 30px;
+    width: 700px;
+    border-radius: 50px;
+    padding: 0px 20px;
+    position: relative; 
+    margin-top: -15px;
+}
+
+
+
+body header nav ul{
+    grid-area: menu;
+    list-style-type: none;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 7vh;
+    
+    
+}
+
+ #menuimagem i{
+     margin:0;
+     padding: 0;
+     font-size: 40px;
+    
+   
+}
+#logo{
+    grid-area: logo;
+    width: 65%;
+    height: 60%;
+
+}
+/* ------------------------------------------- Fim Cabecalho ------------------------------------------- */
+/* ------------------------------------------- Inicio Section ------------------------------------------- */
+
+body section{
+    background-color:rgb(250, 245, 245);
+    grid-area: conteudo;
+    
+       
+}
+
+#graddisc{
+    display: grid;   
+    padding: 40px;
+    background-color: white;
+    
+    
+}
+#graddisc h1{
+    text-align: center;
+    font-size: clamp(3rem, 2vw, 1.5rem);
+    
+}
+#disc{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    gap:1vw;
+       
+}
+
+
+#disc section {
+    width: 30vw;
+    height: 15vh;
+    margin-bottom: 2vh;
+    border-radius: 20px;
+    padding: 30px  ;
+    background-color: #ebeaea;
+    border: 3px solid rgb(61, 57, 57);
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap:1vw;
+    
+}
+#disc h1{
+    align-items: center;
+    background-color: white;    
+}
+
+#disc i{
+    margin: 0;
+    padding: 0;
+    grid-area:imagempdf;
+    background-color: #803031;
+    font-size: 100px;
+    border: 3px solid rgb(61, 57, 57);
+    border-radius: 20px;
+   
+}
+#disc h2{
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    position: fixed;
+    margin-left: 100px;
+    margin-top: -65px;
+    
+}
+#disc h4{
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    position: fixed;
+    margin-left: 100px;
+    margin-top: 26px;
+}
+#disc h3{
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    position: fixed;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+  @media screen and (max-width: 780px) {
+    body  {
+       
+        display: grid;
+        grid-template-areas: 
+        "cabecalho"
+        "conteudo"
+        "rodape"; 
+        grid-template-columns: auto;
+        grid-template-rows:  40vh 100vh 60vh;   
+    }
+
+    }
+  
+  @media screen and (max-width: 780px) {
+    body header{
+        display:grid;
+        grid-template-areas: 
+        "logo"
+        "menu"
+        "dados"
+        "busca";
+        grid-template-columns: auto;
+        grid-template-rows: 10vh 10vh 10vh 10vh;
+        place-items: center;
+
+    }
+  }
+  @media screen and (max-width: 780px) {
+    #disc section{
+        flex-direction:column;
+    }
+  }
+
+
+/* ------------------------------------------- Fim Section ------------------------------------------- */
+/* ------------------------------------------- Inicio Footer ------------------------------------------- */
+
+body footer{
+    background-color: #ebeaea;
+    grid-area: rodape;
+
+}
+
+/* ------------------------------------------- Fim Footer ------------------------------------------- */
+
+
+
